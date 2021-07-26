@@ -1,8 +1,8 @@
 import React from 'react';
-import PerfilDesarrollador from './components/PerfilDesarrollador'
+import ListaTipoDocumentos from './components/ListaTipoDocumentos'
 function App() {
   return (
-    <PerfilDesarrollador nombre="Fernando Pérez" edad={27} tienePantalla={true} />
+    <ListaTipoDocumentos  />
   );
 }
 
