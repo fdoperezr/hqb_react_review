@@ -1,8 +1,9 @@
 import React from 'react';
-import ListaTipoDocumentos from './components/ListaTipoDocumentos'
+import Bienvenida from './components/Bienvenida';
+
 function App() {
   return (
-    <ListaTipoDocumentos  />
+    <Bienvenida  />
   );
 }
 
