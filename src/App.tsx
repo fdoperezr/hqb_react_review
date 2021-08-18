@@ -1,16 +1,28 @@
 import React from 'react';
-import ComponenteFuncional from './components/ComponenteFuncional';
-import ComponenteDeClase from './components/ComponenteDeClase'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Inicio from './components/Inicio';
+import Componente1 from './components/Componente1';
+import Componente2 from './components/Componente2';
 
 function App() {
   return (
-    <React.Fragment>
-      <h1>Componente Funcional</h1>
-      <ComponenteFuncional numero1={10} numero2={5} />
-      <br />
-      <h1>Componente de Clase</h1>
-      <ComponenteDeClase numero1={32} numero2={21} />
-    </React.Fragment>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Inicio />
+        </Route>
+        <Route path="/componente1">
+          <Componente1 />
+        </Route>
+        <Route path="/componente2">
+          <Componente2 />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
